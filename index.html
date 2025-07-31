@@ -437,7 +437,7 @@
             <div id="programs" class="mt-24 rounded-full w-90 bg-gradient-to-r from-[#2B1D0E] via-[#4E3629] to-[#7A5C48]">
                 <h3 id="programs" class="text-2xl md:text-3xl font-bold text-center mb-12 text-stone-300">Our Programs & Initiatives</h3>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-16">
                     <!-- Food Assistance Program -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-xl border border-gray-100 group">
                         <div class="h-48 overflow-hidden">
@@ -653,76 +653,84 @@
 
     </section>
     <!-- Impact Section -->
-<section id="impact" class="impact-section">
-  <!-- Background Image -->
-  <div class="impact-bg">
-    <img src="images/line.jpg" alt="Our Impact">
+<section id="impact" class="impact-section relative overflow-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="impact-bg absolute inset-0 z-0">
+    <img src="images/line.jpg" alt="Our Impact" class="w-full h-full object-cover object-center">
+    <div class="absolute inset-0 bg-black/60"></div>
   </div>
   
-  <!-- Diagonal Cut Container -->
-  <div class="impact-container">
-    <div class="impact-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <span class="text-secondary font-semibold">OUR IMPACT</span>
-        <h2 class="text-3xl md:text-4xl font-bold mt-2 text-stone-300">Changing Lives Every Day</h2>
-        <div class="w-20 h-1 mx-auto mt-4 rounded-full"></div>
+  <!-- Content Container -->
+  <div class="relative z-10 py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16 animate-fade-in-up" data-aos="fade-up">
+        <span class="text-secondary font-semibold tracking-wider text-sm uppercase">OUR IMPACT</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 text-white">Changing Lives Every Day</h2>
+        <div class="w-20 h-1 mx-auto mt-6 rounded-full bg-gradient-to-r from-primary to-accent"></div>
       </div>
       
-      <!-- Stats Grid - Now over BG Image -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-16">
-        <div class="stat-card p-6 rounded-xl">
-          <div class="text-4xl font-bold mb-2 text-accent">1,250+</div>
-          <p class="text-white/90">Meals Served Monthly</p>
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center mb-16" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-card p-4 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 border border-white/10">
+          <div class="text-3xl md:text-4xl font-bold mb-2 text-accent">1,250+</div>
+          <p class="text-white/90 text-sm md:text-base">Meals Served Monthly</p>
         </div>
-        <div class="stat-card p-6 rounded-xl">
-          <div class="text-4xl font-bold mb-2 text-secondary">320+</div>
-          <p class="text-white/90">Families Supported</p>
+        <div class="stat-card p-4 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 border border-white/10">
+          <div class="text-3xl md:text-4xl font-bold mb-2 text-secondary">320+</div>
+          <p class="text-white/90 text-sm md:text-base">Families Supported</p>
         </div>
-        <div class="stat-card p-6 rounded-xl">
-          <div class="text-4xl font-bold mb-2 text-primary">85+</div>
-          <p class="text-white/90">Trained in Agriculture</p>
+        <div class="stat-card p-4 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 border border-white/10">
+          <div class="text-3xl md:text-4xl font-bold mb-2 text-primary">85+</div>
+          <p class="text-white/90 text-sm md:text-base">Trained in Agriculture</p>
         </div>
-        <div class="stat-card p-6 rounded-xl">
-          <div class="text-4xl font-bold mb-2 text-accent">2,000+</div>
-          <p class="text-white/90">Clothing Items Distributed</p>
+        <div class="stat-card p-4 md:p-6 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 border border-white/10">
+          <div class="text-3xl md:text-4xl font-bold mb-2 text-accent">2,000+</div>
+          <p class="text-white/90 text-sm md:text-base">Clothing Items Distributed</p>
         </div>
       </div>
       
       <!-- Bottom Content -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center" data-aos="fade-up" data-aos-delay="200">
         <div>
-          <h3 class="text-2xl font-bold mb-4">Measuring Our Success</h3>
-          <p class="text-white/90 mb-6">Each number represents lives transformed through our community programs. We track our impact to ensure we're creating meaningful, sustainable change.</p>
+          <h3 class="text-2xl md:text-3xl font-bold mb-6 text-white">Measuring Our Success</h3>
+          <p class="text-white/90 mb-8 leading-relaxed">Each number represents lives transformed through our community programs. We track our impact to ensure we're creating meaningful, sustainable change.</p>
           
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <div class="bg-secondary/20 p-2 rounded-full mr-4">
-                <i class="fas fa-utensils text-secondary"></i>
+          <div class="space-y-6">
+            <div class="flex items-start group">
+              <div class="bg-secondary/20 p-3 rounded-full mr-4 transition-all group-hover:bg-secondary/30">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
               </div>
               <div>
-                <h4 class="font-semibold">Nutrition Programs</h4>
-                <p class="text-white/80 text-sm">Over 1,250 nutritious meals served monthly to vulnerable community members.</p>
+                <h4 class="font-semibold text-white">Nutrition Programs</h4>
+                <p class="text-white/80 text-sm md:text-base mt-1">Over 1,250 nutritious meals served monthly to vulnerable community members.</p>
               </div>
             </div>
             
-            <div class="flex items-start">
-              <div class="bg-accent/20 p-2 rounded-full mr-4">
-                <i class="fas fa-tshirt text-accent"></i>
+            <div class="flex items-start group">
+              <div class="bg-accent/20 p-3 rounded-full mr-4 transition-all group-hover:bg-accent/30">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                </svg>
               </div>
               <div>
-                <h4 class="font-semibold">Clothing Distribution</h4>
-                <p class="text-white/80 text-sm">Providing dignity through quality clothing donations to those in need.</p>
+                <h4 class="font-semibold text-white">Clothing Distribution</h4>
+                <p class="text-white/80 text-sm md:text-base mt-1">Providing dignity through quality clothing donations to those in need.</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div class="relative">
-          <img src="images/blanket.avif" alt="Community gathering" class="rounded-2xl shadow-xl w-full">
-          <div class="absolute -bottom-4 -left-4 bg-primary p-4 rounded-lg shadow-lg">
+        <div class="relative" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/blanket.avif" alt="Community gathering" class="rounded-2xl shadow-xl w-full aspect-video object-cover transition-all duration-500 hover:shadow-2xl">
+          <div class="absolute -bottom-4 -left-4 bg-primary p-4 rounded-lg shadow-lg backdrop-blur-sm bg-primary/90 hover:bg-primary transition-all duration-300 transform hover:scale-105">
             <div class="flex items-center">
               <div class="bg-white/10 p-2 rounded-full mr-3">
-                <i class="fas fa-heart text-white"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                </svg>
               </div>
               <div>
                 <p class="text-white text-sm font-medium">Community Stories</p>
@@ -953,7 +961,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <span class="text-sm text-gray-500">Donor since 2023, Eldorado Park</span>
+            <span class="text-sm text-amber-200/70">Donor since 2023, Eldorado Park</span>
           </div>
         </div>
       </div>
@@ -973,7 +981,12 @@
             "The dignity this organization brings to our community goes beyond meals. When people who once stood in line for food now sell their own produce at market, that's transformation only God could orchestrate."
           </blockquote>
           <div class="mt-6">
-            <span class="text-sm text-gray-500">Local Church Leader, Kanana Park</span>
+            <div class="flex text-amber-400 mr-4">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-sm text-amber-200/70">Local Church Leader, Kanana Park</span>
           </div>
         </div>
       </div>
